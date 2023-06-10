@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Hides vertical scrollbar but still scrollable */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-bar{
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+  display: block;
+  position: fixed;
+  top: 0px;
+  cursor: pointer;
+}
+.menu-bar i {
+  color: black;
+  font-size: 28px;
+}
+.menu-bar span {
+  font-size: 24px;
+  font-family: serif;
+}
+@media (max-width: 925px) {
+  .tag-icon {
+    display: none !important;
+  }
+  .menu-bar {
+    border: 2px solid black;
+    border-radius: 10px 10px;
+    padding-top: 8px;
+    padding-left: 3.5px;
+  }
+}
+.menu-bar span:hover {
+  padding-left : 110px;
+  transition: .4s;
+}
+
+/* sidebar profile image, name and mailID */
+.sidebar-image {
+  margin-top: 28px;
+  border-radius: 50% 50%;
+  max-width : 65%;
+  border: 5px solid teal;
+}
+.sidebar-header {
+  text-align: center;
+  color: white;
+}
+.sidebar-header h1 {
+  margin-top : 10px;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+.sidebar-header p {
+  font-size: 17.5px;
+  font-family: serif;
+}
+
+/* Social icons link styles */
+.social-icons {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  cursor: default;
+}
+.social-icons i {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.social-icons i:hover {
+  color: #2185d0;
+}
+
+/* Navbar styles */
+nav {
+  margin-top : 10px;
+  font-size: 15px;
+}
+nav .active {
+  text-align: right;
+}
+
+
+
+/* home page styles */
+
+#home {
+}
+.home-content {
+  margin : 60px;
+  padding-top: 80px;
+}
+@media (max-width: 670px) {
+  .home-content {
+    padding-top: 160px;
+  }
+}
+
+.home-content-header h2{
+  font-size: 45px;
+  font-family: serif;
+}
+.home-content-header span {
+  font-family: monospace;
+}
+@media (max-width: 670px) {
+    .home-content {
+        margin : 15px;
+    }
+    .vector-image{
+        height: 285px;
+    }
+    .home-content-header h2{
+      font-size: 32px;
+      font-weight: 500;
+    }
+    .home-content-header span{
+      font-weight: bolder;
+    }
+    .home-content-details {
+      margin-top : 60px;
+    }
+}
+.home-content-details {
+  margin-top : 50px;
+  font-family: serif;
+}
+.home-content-details h2 {
+  font-size: 25px;
+  font-weight: normal;
+  font-family: 'Patrick Hand', cursive !important;
+
+}
+.home-content-details p {
+  font-size: 24px;
+  font-family: 'Patrick Hand', cursive !important;
+}
+.ping-me h3 {
+  margin-top: 22px;
+  font-weight: bolder;
+  font-size: 26px;
+}
+.ping-me h2{
+  margin-top: 0px;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+
+
+/* skills page styles */
+
+.skills-content {
+  margin : 80px;
+  padding-top: 40px;
+}
+@media (max-width: 640px) {
+    .skills-content {
+        margin : 10px;
+        padding-top: 80px;
+    }
+}
+.skills-description {
+  font-family: monospace;
+  font-size: 14.8px;
+  line-height: 22px;
+}
+.skills-card {
+  position: static !important;
+  margin-right: 16px !important;
+  margin-left: 16px !important;
+  cursor: default;
+}
+.skills-card:hover {
+  box-shadow: 2px 3px 6px grey !important;
+}
+.content :hover, .header :hover, .description :hover {
+  box-shadow: none !important;
+}
+
+
+/* projects page styles */
+
+.project-on{
+  margin : 50px;
+  padding-top: 80px;
+  padding-bottom: 12px;
+  border-bottom : 2px solid rgb(103, 175, 199);
+}
+.project-type { 
+  font-size: 14px !important;
+}
+
+@media (max-width: 640px) {
+    .project-type {
+      font-size: 10.5px !important;
+      margin: 1px !important;
+      padding: 8px !important;
+    }
+    .project-on {
+      text-align: center;
+    }
+}
+
+
+.android-projects-card {
+  margin: 20px !important;
+  position: static !important;
+}
+
+.android-projects-card img {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.android-projects-card img:hover {
+  -moz-transform: scale(1.75);
+  -webkit-transform: scale(1.75);
+  transform: scale(1.75);
+}
+
+@media (max-width: 640px) {
+  .android-projects-card img:hover {
+    -moz-transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+
+.website-image {
+  overflow: hidden;
+}
+.website-projects-card {
+  margin: 20px !important;
+  position: static !important;
+}
+.website-projects-card img {
+  height: 225px !important;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.website-projects-card :hover img {
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+.website-projects-card:hover {
+  box-shadow: 3px 3px 9px grey !important;
+}
+.content:hover, .website-image:hover {
+  box-shadow: none !important;
+}
+
+
+/* contact page styles */
+
+.contact-content {
+  margin : 80px;
+  padding-top: 80px;
+}
+@media (max-width: 640px) {
+    .contact-content {
+        margin : 10px;
+        padding-top: 100px;
+    }
+}
+.contact-details i{
+  font-size: 26px;
+  padding-top: 18px;
+}
+.contact-details {
+  font-size: 24px;
+  font-family: serif;
+  font-family: 'Patrick Hand', cursive !important;
+}
+.divider {
+  font-family: 'Patrick Hand', cursive !important;
+  font-size: 24px !important;
+}
+.contact-icons {
+  text-align: center;
+}
+.contact-icons button {
+  margin: 5px !important;
+}
+
+.contact-divider-left {
+  border-left: 2px dashed black;
+}
+.contact-divider-right {
+  border-right: 2px dashed black;
+}
+.qrcode {
+  text-align: center !important;
+}
+@media (max-width: 991px) {
+  .contact-details {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+    .contact-divider-left {
+      border-left: none;
+    }
+    .contact-divider-right {
+      border-right: none;
+    }
+    .contact-form {
+      margin-top: 40px;
+    }
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  border-bottom : 3px solid lightblue !important;
+  font-weight: bolder;
+}
